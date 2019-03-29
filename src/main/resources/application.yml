@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username: sa
+    password: ''
+  jpa:
+    show-sql: true
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
